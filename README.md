@@ -37,7 +37,7 @@ using `npm i express nodemon mongoose`
 
 ## specify url
 
-`const mongouri = "mongodb+srv://result_project:Avtar123@geturresult.jiq2aiw.mongodb.net/geturresult?retryWrites=true&w=majority";`
+`const mongouri = "Link";`
 
 ## method for connecting database and READ Opertaion
 
