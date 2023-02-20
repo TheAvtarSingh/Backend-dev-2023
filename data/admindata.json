@@ -1,0 +1,24 @@
+[
+    {
+        "img":"https://source.unsplash.com/random/300×300/?student",
+"AdminName" : "Avtar Singh",
+"email" : "mytempm03@ymail.com",
+"password" : "Avtar@123"
+
+    },
+    {
+        "img":"https://source.unsplash.com/random/300×300/?student",
+"AdminName" : "Harit Gandhi",
+"email" : "mytempm04@ymail.com",
+"password" : "Harit@123"
+
+    },
+    {
+        "img":"https://source.unsplash.com/random/300×300/?student",
+"AdminName" : "Sunil Kharsu",
+"email" : "mytempm05@ymail.com",
+"password" : "Sunil@123"
+
+    }
+
+]

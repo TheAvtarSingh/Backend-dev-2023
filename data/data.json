@@ -1,0 +1,49 @@
+[
+    {
+        "img":"https://source.unsplash.com/random/300×300/?student",
+"StudentName" : "Harit Gandi",
+"Roll Number " : "20csu245",
+"email" : "mytempm03@ymail.com",
+"password" : "Harit@123",
+"Marks" : {
+    "Physics" : 80,
+    "Chemistry" : 90,
+    "Maths" : 70
+},
+"Class" : "FSB",
+"Department":"CSE",
+"Field" : "Btech"
+    },
+    {
+        "img":"https://source.unsplash.com/random/300×300/?student",
+"StudentName" : "Sunil Kharsu",
+"Roll Number " : "20csu371",
+"email" : "kharsu03@ymail.com",
+"password" : "Sunil@123",
+"Marks" : {
+    "Physics" : 70,
+    "Chemistry" :80,
+    "Maths" : 80
+},
+"Class" : "FSB",
+"Department":"CSE",
+"Field" : "Btech"
+    },
+    {
+        "img":"https://source.unsplash.com/random/300×300/?student",
+"StudentName" : "Avtar Singh",
+"Roll Number " : "20csu241",
+"email" : "singhav@gmail.com",
+"password" : "Avtar@123",
+"Marks" : {
+    "Physics" : 90,
+    "Chemistry" :90,
+    "Maths" : 90
+},
+"Class" : "FSB",
+"Department":"CSE",
+"Field" : "Btech"
+    }
+    
+]
+

@@ -1,0 +1,12 @@
+[
+  {
+    "StudentName": "Jasvinder",
+    "RollNumber": "20bsc331",
+    "Email": "jasv221@gmail.com",
+    "Password": "Jasvinder@112",
+    "Field": "BSC",
+    "Department": "Physics",
+    "Class": "First",
+    "Marks": { "Physics": 90, "Chemistry": 90, "Maths": 90 }
+  }
+]
