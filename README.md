@@ -206,7 +206,10 @@ use
 
 ## Change Syntax in RegisterStudent.js copy from Website
 
+![image](https://user-images.githubusercontent.com/88712571/220177231-a5fb6e52-ab07-4210-86b2-bad002e97ab0.png)
 
+
+# Integrate From Front-End
 
 
 
