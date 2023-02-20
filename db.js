@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const mongouri =
-  "mongodb+srv://result_project:Avtar123@geturresult.jiq2aiw.mongodb.net/geturresult?retryWrites=true&w=majority";
+  "Your Link";
 
 const mongodb = async () => {
 // Setting checking of query to false to avoid errors
