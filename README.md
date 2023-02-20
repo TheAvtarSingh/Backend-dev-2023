@@ -196,7 +196,18 @@ router.post("/registerStudent", async (req, res) => {
 ![image](https://user-images.githubusercontent.com/88712571/219937524-4e3c5e5b-68fe-4a6b-997a-9887055934f0.png)
 
 
-# Implementing Front end integration
+# Backend validation
+
+use 
+
+`https://express-validator.github.io/docs/`
+
+`npm install --save express-validator`
+
+## Change Syntax in RegisterStudent.js copy from Website
+
+
+
 
 
 
