@@ -12,7 +12,7 @@ app.use(cors())
 
 
 
-mongoose.connect("mongodb+srv://result_project:Avtar123@cluster0.lhvkopa.mongodb.net/?retryWrites=true&w=majority",{
+mongoose.connect("Your Url",{
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true 
