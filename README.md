@@ -236,5 +236,69 @@ use
 
 ## Creating A Backend Request
 
+## Check The Request at index.js and Specify the method in RegisterStudent.js Router
+
+
+![image](https://user-images.githubusercontent.com/88712571/222779228-af6917cf-1b64-46e6-9cb3-50e255cc495f.png)
+
+```
+
+router.post(
+  "/loginAdmin",
+ 
+
+  async (req, res) => {
+    let adminEmail = req.body.adminEmail;
+
+    try {
+      let adminData = await Admin.findOne({ adminEmail });
+      if (!adminData) {
+        return res
+          .status(400)
+          .json({
+            errors: "Check Your Email or Admin Not Registered ! !",
+          });
+      }
+
+      if (req.body.adminPassword !== adminData.adminPassword) {
+        return res.status(400).json({ errors: "Check Your Password !!" });
+      }
+      res.json({ success: true });
+    } catch (error) {
+      console.log(error);
+      res.json({ success: false });
+    }
+  }
+);
+
+```
+
+## Make Model/Schema in Models Folder to Specify the Structure
+
+```
+const mongoose = require('mongoose')
+
+const {Schema} = mongoose;
+
+const AdminSchema = new Schema({
+    adminEmail:{
+        type:String,
+        required : true,
+    },
+    adminPassword:{
+        type:String,
+        required : true
+    }
+})
+
+module.exports = mongoose.model('admin',AdminSchema);
+```
+
+![image](https://user-images.githubusercontent.com/88712571/222780404-226dee10-2738-406f-a3d7-bad55d3c8eb9.png)
+
+
+## Sending Request
+
+![image](https://user-images.githubusercontent.com/88712571/222780589-cbb21ebe-0ce3-4d58-9200-50fa48a2706a.png)
 
 
