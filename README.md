@@ -301,4 +301,7 @@ module.exports = mongoose.model('admin',AdminSchema);
 
 ![image](https://user-images.githubusercontent.com/88712571/222780589-cbb21ebe-0ce3-4d58-9200-50fa48a2706a.png)
 
+![image](https://user-images.githubusercontent.com/88712571/222781070-b29f846d-c8ef-492b-b6c1-ba1736cf2f0d.png)
+
+![image](https://user-images.githubusercontent.com/88712571/222781155-cdb88c90-247f-4db7-8904-511383347ab0.png)
 
