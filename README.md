@@ -41,6 +41,7 @@ using `npm i express nodemon mongoose`
 
 ## method for connecting database and READ Opertaion
 
+```
 const mongodb = async () => {
 // Setting checking of query to false to avoid errors
   mongoose.set("strictQuery", false);
@@ -62,6 +63,8 @@ const mongodb = async () => {
     }
   });
 };
+
+```
 
 ## export file
 
@@ -96,6 +99,7 @@ const mongodb = async () => {
 
 ## make Structure
 
+```
 const StudentSchema = new Schema({
     img:{
         type:String,
@@ -120,6 +124,8 @@ const StudentSchema = new Schema({
     }
 })
 
+```
+
 ![image](https://user-images.githubusercontent.com/88712571/219937447-e03e59ee-2c03-4a48-b15c-08db778eaf77.png)
 
 ## export Module
@@ -143,6 +149,8 @@ const StudentSchema = new Schema({
 
 ## Make Post Method
 
+```
+
 router.post("/registerStudent", async (req, res) => {
   try {
     await Student.create({
@@ -158,6 +166,8 @@ router.post("/registerStudent", async (req, res) => {
     res.json({ success: false });
   }
 });
+
+```
 
 ## Export File 
 `module.exports = router;`
@@ -184,12 +194,16 @@ router.post("/registerStudent", async (req, res) => {
 
 ## In Body
 
+```
+
 {
     
     "RollNumber": "20csu241",
     "Email": "singhaa2@gmail.com",
     "Password": "Avtar@123",
 }
+
+```
 
 ## Send File
 
