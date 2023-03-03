@@ -70,7 +70,7 @@ const mongodb = async () => {
 
 `module.exports = mongodb`
 
-![image](https://user-images.githubusercontent.com/88712571/219937419-b3d567cf-c9df-4a65-879a-6bf84d27c085.png)
+![image](https://user-images.githubusercontent.com/88712571/222642673-e54a341f-dfba-43c7-90fe-9f3f1714090e.png)
 
 
 # use in index.js
