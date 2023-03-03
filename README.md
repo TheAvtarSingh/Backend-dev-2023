@@ -226,7 +226,7 @@ use
 # Integrate From Front-End
 
 
-### Continue The Integration from 
+### Continue The Integration from Repo - In which we are Creating Student Registration Page
 
 [Frontend-dev-2023 - Avtar Singh](https://github.com/TheAvtarSingh/Frontend-dev-2023#frontend-dev-2023)
 
