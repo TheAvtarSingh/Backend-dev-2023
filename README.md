@@ -305,4 +305,44 @@ module.exports = mongoose.model('admin',AdminSchema);
 
 ![image](https://user-images.githubusercontent.com/88712571/222781155-cdb88c90-247f-4db7-8904-511383347ab0.png)
 
+[Final Output - Admin](https://github.com/TheAvtarSingh/Frontend-dev-2023/blob/main/README.md#merged)
+
 ## Using Hashing as a Security (Encryption)
+
+Using BcryptJs   `npm i bcryptjs`
+
+import `const bcrypt = require('bcryptjs');`
+
+##### Before Sendind Password to Database
+
+```
+const salt = await bcrypt.genSalt(10);
+let secPassword = await bcrypt.hash(req.body.Password,salt)
+```
+
+##### Sending to Database
+
+```
+if (!studentData) {
+        await Student.create({
+          StudentName: req.body.StudentName,
+          RollNumber: req.body.RollNumber,
+          Email: req.body.Email,
+          Password: secPassword,
+          Field: req.body.Field,
+          Department: req.body.Department,
+          Class: req.body.Class,
+          Marks: {
+            Physics: req.body.Marks.Physics,
+            Chemistry: req.body.Marks.Chemistry,
+            Maths: req.body.Marks.Maths,
+          },
+```
+
+Output : 
+
+![image](https://user-images.githubusercontent.com/88712571/223076011-3d0e658b-2393-48b1-9daf-433bf06b6abe.png)
+
+Database :
+
+![image](https://user-images.githubusercontent.com/88712571/223076101-6f209817-cf6b-40c7-b6aa-bdaf9744c570.png)
