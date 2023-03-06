@@ -305,3 +305,4 @@ module.exports = mongoose.model('admin',AdminSchema);
 
 ![image](https://user-images.githubusercontent.com/88712571/222781155-cdb88c90-247f-4db7-8904-511383347ab0.png)
 
+## Using Hashing as a Security (Encryption)
