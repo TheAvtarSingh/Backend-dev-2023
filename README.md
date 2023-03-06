@@ -346,3 +346,53 @@ Output :
 Database :
 
 ![image](https://user-images.githubusercontent.com/88712571/223076101-6f209817-cf6b-40c7-b6aa-bdaf9744c570.png)
+
+### Login using encrypted data
+
+`    const pwdCompare = await bcrypt.compare(req.body.Password,studentData.Password); `
+
+### Change
+
+```
+if (!studentData) {
+        return res
+          .status(400)
+          .json({
+            errors: "Check Your Roll Number or Student Not Registered ! !",
+          });
+      }
+      const pwdCompare = await bcrypt.compare(req.body.Password,studentData.Password);
+      if (!pwdCompare) {
+        return res.status(400).json({ errors: "Check Your Password !!" });
+      }
+      res.json({ success: true });
+```
+
+
+# Using JWT(Json Web Tokens) Tokens to Secure Authorization
+
+Install Using `npm install jsonwebtoken`
+
+```
+// JWT Token
+
+// Getting id
+const data = {
+  student :{
+    id : studentData.id
+  }
+}
+// sending token
+const authToken = jwt.sign(data,jwtSecret)
+
+// Verify Token
+// const decode = jwd.decode(req.body.authToken,authToken)
+
+      res.json({ success: true,authToken: authToken });
+```
+
+## Getting Token on Front end
+![image](https://user-images.githubusercontent.com/88712571/223098032-94804eb3-195c-4347-8014-22b9903cccf4.png)
+
+![image](https://user-images.githubusercontent.com/88712571/223098074-315df8fb-150f-4464-867c-e7b5697d03de.png)
+
